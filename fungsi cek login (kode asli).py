@@ -1,5 +1,8 @@
 # fungsi cek login
-def cek(u, p):
+def cek():
+    u = input("Masukan nama: ")
+    p = input("Masukan pass: ")
+    
     if u == "admin":
         if p == "12345":
             print("Login Berhasil!")
@@ -11,5 +14,4 @@ def cek(u, p):
         print("User Tidak Ada!")
         return False
 
-# panggil fungsi
-cek("admin", "123")
+cek()
